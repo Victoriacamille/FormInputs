@@ -12,26 +12,27 @@
   </head>
   <body>
     <div id="banner" class="container">
-      <h1 class="display-4">Hello, world!</h1>
+      <h1 class="display-4">Wat iz de up duuude!</h1>
     </div>
     <div class="container">
       <form action="{{ url_for('process_inputs') }}" method="post">
         <div class="form-group">
-          <label for="input_name">First Name</label>
+          <label for="input_name">Input your first and last name</label>
           <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Fred Flintstone">
         </div>
         <div class="form-group">
-          <label for="input_dropdown">Example select</label>
+          <label for="input_dropdown">Wat are you looking for</label>
           <select class="form-control" name="input_dropdown" id="input_dropdown">
-            <option>1 fish</option>
-            <option>2 fish</option>
-            <option>red fish</option>
-            <option>the spanish inquisition</option>
-            <option>blue fish</option>
+            <option>Input what you want here</option>
+            <option>Pre-made Car customizations</option>
+            <option>Company items</option>
+            <option>Car customization</option>
+            <option>Law Force or Military vehicles and custimazation oppertunities</option>
+            <option>Misc. or playing around</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input_select">Example multiple select</label>
+          <label for="input_select">How many do you want to customize?</label>
           <select multiple class="form-control" name="input_select" id="input_select">
             <option>1</option>
             <option>2</option>
@@ -39,9 +40,9 @@
             <option>4</option>
             <option>5</option>
           </select>
-        </div>
-        <div class="form-group">
-          <label for="input_freeform">Example textarea</label>
+          </div>
+         <div class="form-group">
+          <label for="input_freeform">Please type any comments or specifications you would like</label>
           <textarea class="form-control" name="input_freeform" id="input_freeform" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
